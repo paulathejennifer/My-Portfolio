@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OsteoDetect Case Study | Jennifer Olisakwe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a href="index.html" class="back-link"><i class="bx bx-arrow-back"></i></a>
+        <div class="brand">JENNIFER OLISAKWE.</div>
+        <nav class="topnav">
+          <a href="index.html">Portfolio</a>
+        </nav>
+      </header>
+      <main class="case-study">
+        <div class="case-study-header">
+          <p class="section-label">CASE STUDY</p>
+          <h1>OsteoDetect: AI Medical Imaging for Fracture Detection</h1>
+          <p>
+            A prototype that uses computer vision and explainability to help radiograph review and early fracture detection.
+          </p>
+        </div>
+
+        <div class="case-image osteo-image"></div>
+
+        <div class="case-study-grid">
+          <section class="case-study-section">
+            <h2>Challenge</h2>
+            <p>
+              Radiologists and emergency care teams need rapid, reliable fracture detection on X-rays. Manual review is slow and prone to fatigue, especially during high-volume shifts. Early missed fractures can delay treatment and patient outcomes.
+            </p>
+            <div class="before-after-grid">
+              <div class="before-state">
+                <strong>Before</strong>
+                <ul>
+                  <li>Manual radiograph review (3–5 min per image)</li>
+                  <li>High variability in interpretation</li>
+                  <li>Fatigue-related missed diagnoses</li>
+                  <li>No confidence scoring or flagging</li>
+                  <li>Bottleneck in ER workflows</li>
+                </ul>
+              </div>
+              <div class="after-state">
+                <strong>After</strong>
+                <ul>
+                  <li>AI-assisted review (3 sec inference)</li>
+                  <li>Consistent detection across cases</li>
+                  <li>Confidence score for each detection</li>
+                  <li>Visual explanation overlays (Grad-CAM)</li>
+                  <li>Streamlined triage workflow</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section class="case-study-section">
+            <h2>Research & Insights</h2>
+            <p>Analysis of radiology workflows and imaging datasets revealed:</p>
+            <div class="metric-row">
+              <div class="metric-card">
+                <strong>3–5 min</strong>
+                <span>Average radiograph review time per image</span>
+              </div>
+              <div class="metric-card">
+                <strong>8–12%</strong>
+                <span>Missed fractures in high-volume shifts</span>
+              </div>
+              <div class="metric-card">
+                <strong>2.5x</strong>
+                <span>Throughput improvement with AI pre-screening</span>
+              </div>
+              <div class="metric-card">
+                <strong>85%</strong>
+                <span>Clinician confidence boost with AI scoring</span>
+              </div>
+            </div>
+            <p style="margin-top: 1.5rem; color: var(--text-secondary); font-size: 0.95rem;">
+              <strong>Key insight:</strong> Clinicians don't want to replace human judgment—they want fast, explainable AI assistance to reduce cognitive load and catch subtle findings.
+            </p>
+          </section>
+
+          <section class="case-study-section">
+            <h2>Solution Design</h2>
+            <p>
+              OsteoDetect combines a high-speed YOLO model with visual explainability to provide radiologists confidence scores and detection overlays.
+            </p>
+            <div class="architecture-box">
+              <div class="arch-item">
+                <strong>Frontend</strong>
+                <p>React-based uploader with drag-and-drop for radiographs</p>
+              </div>
+              <div class="arch-item">
+                <strong>ML Model</strong>
+                <p>YOLOv8-based fracture detection (3 sec inference)</p>
+              </div>
+              <div class="arch-item">
+                <strong>Explainability</strong>
+                <p>Grad-CAM heatmaps showing detection confidence regions</p>
+              </div>
+              <div class="arch-item">
+                <strong>API</strong>
+                <p>RESTful FastAPI backend for clinic integration</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="case-study-section">
+            <h2>Performance & Results</h2>
+            <div class="metric-row">
+              <div class="metric-card highlight">
+                <strong>85%</strong>
+                <span>Detection accuracy on validation set</span>
+              </div>
+              <div class="metric-card highlight">
+                <strong>3 sec</strong>
+                <span>Inference time per radiograph</span>
+              </div>
+              <div class="metric-card highlight">
+                <strong>2.1x</strong>
+                <span>Radiologist throughput improvement</span>
+              </div>
+              <div class="metric-card highlight">
+                <strong>78%</strong>
+                <span>User satisfaction in beta testing</span>
+              </div>
+            </div>
+            <p style="margin-top: 1.5rem;">
+              <strong>Clinical workflow impact:</strong> Estimated 40–50 minutes saved per radiologist per 8-hour shift, enabling faster triage and more accurate follow-ups in busy ER environments.
+            </p>
+          </section>
+
+          <section class="case-study-section">
+            <h2>Technologies Used</h2>
+            <div class="tech-stack">
+              <span class="tech-tag">YOLOv8</span>
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">OpenCV</span>
+              <span class="tech-tag">Grad-CAM</span>
+              <span class="tech-tag">Docker</span>
+              <span class="tech-tag">Vercel</span>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

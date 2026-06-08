@@ -1,0 +1,213 @@
+<svg width="700" height="500" viewBox="0 0 700 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Glow -->
+
+<ellipse
+ cx="350"
+ cy="410"
+ rx="220"
+ ry="35"
+ fill="#7C3AED"
+ opacity="0.15"
+/>
+
+  <!-- Coffee Saucer -->
+
+<ellipse
+ cx="185"
+ cy="345"
+ rx="55"
+ ry="12"
+ fill="#3A3F52"
+/>
+
+  <!-- Coffee Cup -->
+
+<rect
+ x="145"
+ y="250"
+ width="80"
+ height="90"
+ rx="18"
+ fill="#232736"
+/>
+
+  <!-- Coffee Surface -->
+
+<ellipse
+ cx="185"
+ cy="260"
+ rx="30"
+ ry="8"
+ fill="#141620"
+/>
+
+  <!-- Handle -->
+
+<path
+ d="M225 275
+    C255 275 255 315 225 315"
+ stroke="#232736"
+ stroke-width="10"
+ fill="none"
+/>
+
+  <!-- Steam 1 -->
+
+<path
+ d="M170 235
+    C160 220 180 210 170 190"
+ stroke="#CBD5E1"
+ stroke-width="4"
+ stroke-linecap="round"
+ opacity="0.4"
+/>
+
+  <!-- Steam 2 -->
+
+<path
+ d="M190 235
+    C180 215 205 205 190 180"
+ stroke="#CBD5E1"
+ stroke-width="4"
+ stroke-linecap="round"
+ opacity="0.4"
+/>
+
+  <!-- Steam 3 -->
+
+<path
+ d="M210 235
+    C200 220 220 205 210 185"
+ stroke="#CBD5E1"
+ stroke-width="4"
+ stroke-linecap="round"
+ opacity="0.4"
+/>
+
+  <!-- Laptop Base -->
+
+<path
+ d="M230 340
+    L520 340
+    L560 385
+    L190 385
+    Z"
+ fill="#1F2433"
+/>
+
+  <!-- Keyboard Area -->
+
+<rect
+ x="255"
+ y="350"
+ width="240"
+ height="20"
+ rx="8"
+ fill="#2A3042"
+/>
+
+  <!-- Trackpad -->
+
+<rect
+ x="330"
+ y="355"
+ width="90"
+ height="12"
+ rx="6"
+ fill="#3A4157"
+/>
+
+  <!-- Laptop Screen Frame -->
+
+<rect
+ x="250"
+ y="110"
+ width="260"
+ height="190"
+ rx="20"
+ fill="#232736"
+/>
+
+  <!-- Screen -->
+
+<rect
+ x="265"
+ y="125"
+ width="230"
+ height="160"
+ rx="12"
+ fill="#0B1020"
+/>
+
+  <!-- Camera -->
+
+<circle
+ cx="380"
+ cy="118"
+ r="3"
+ fill="#64748B"
+/>
+
+  <!-- Typing Lines -->
+
+<rect
+ x="290"
+ y="160"
+ width="120"
+ height="10"
+ rx="5"
+ fill="#F97316"
+ opacity="0.9"
+/>
+
+<rect
+ x="290"
+ y="185"
+ width="160"
+ height="8"
+ rx="4"
+ fill="#CBD5E1"
+ opacity="0.45"
+/>
+
+<rect
+ x="290"
+ y="208"
+ width="110"
+ height="8"
+ rx="4"
+ fill="#CBD5E1"
+ opacity="0.45"
+/>
+
+<rect
+ x="290"
+ y="231"
+ width="170"
+ height="8"
+ rx="4"
+ fill="#CBD5E1"
+ opacity="0.45"
+/>
+
+<rect
+ x="290"
+ y="254"
+ width="140"
+ height="8"
+ rx="4"
+ fill="#CBD5E1"
+ opacity="0.45"
+/>
+
+  <!-- Status Dot -->
+
+<circle
+ cx="470"
+ cy="150"
+ r="6"
+ fill="#F97316"
+/>
+
+</svg>

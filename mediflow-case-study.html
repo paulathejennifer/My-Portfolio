@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MediFlow AI Case Study | Jennifer Olisakwe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a href="index.html" class="back-link"><i class="bx bx-arrow-back"></i></a>
+        <div class="brand">JENNIFER OLISAKWE.</div>
+        <nav class="topnav">
+          <a href="index.html">Portfolio</a>
+        </nav>
+      </header>
+      <main class="case-study">
+        <div class="case-study-header">
+          <p class="section-label">CASE STUDY</p>
+          <h1>MediFlow AI: Healthcare Referral Management</h1>
+          <p>
+            A full-stack platform designed to streamline referral intake, automate OCR and transcription, and provide real-time clinical workflow visibility for healthcare teams.
+          </p>
+        </div>
+
+        <div class="case-image mediflow-image"></div>
+
+        <div class="case-study-grid">
+          <section class="case-study-section">
+            <h2>Challenge</h2>
+            <p>
+              Healthcare teams struggled with fragmented referral workflows. Documents arrived via fax, email, and portal—each requiring manual transcription, document review, and status tracking. Clinical staff spent nearly 30% of their time on paperwork instead of patient care.
+            </p>
+            <div class="before-after-grid">
+              <div class="before-state">
+                <strong>Before</strong>
+                <ul>
+                  <li>Manual document review (18 mins avg per referral)</li>
+                  <li>Fax delays and lost pages</li>
+                  <li>Handwritten notes, inconsistent data</li>
+                  <li>No real-time visibility</li>
+                  <li>High error rate in data entry</li>
+                </ul>
+              </div>
+              <div class="after-state">
+                <strong>After</strong>
+                <ul>
+                  <li>Automated OCR + transcription (2 mins processing)</li>
+                  <li>Unified document intake</li>
+                  <li>Structured data, DICOM imaging ready</li>
+                  <li>Live dashboard for all stakeholders</li>
+                  <li>92% recognition accuracy</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section class="case-study-section">
+            <h2>Research & Insights</h2>
+            <p>Interviews with 12 clinical teams revealed:</p>
+            <div class="metric-row">
+              <div class="metric-card">
+                <strong>30%</strong>
+                <span>Average time on referral admin vs. patient care</span>
+              </div>
+              <div class="metric-card">
+                <strong>18 min</strong>
+                <span>Avg delay from receipt to clinical review</span>
+              </div>
+              <div class="metric-card">
+                <strong>3–5 steps</strong>
+                <span>Manual handoffs per referral</span>
+              </div>
+              <div class="metric-card">
+                <strong>12%</strong>
+                <span>Referrals with missing or unclear data</span>
+              </div>
+            </div>
+            <p style="margin-top: 1.5rem; color: var(--text-secondary); font-size: 0.95rem;">
+              <strong>Key finding:</strong> Teams wanted a unified inbox and faster document processing. They needed better communication across departments.
+            </p>
+          </section>
+
+          <section class="case-study-section">
+            <h2>Solution Architecture</h2>
+            <p>
+              MediFlow AI unified intake, processing, and workflows on a single platform:
+            </p>
+            <div class="architecture-box">
+              <div class="arch-item">
+                <strong>Intake Layer</strong>
+                <p>Fax, email, portal ingestion with unified queuing</p>
+              </div>
+              <div class="arch-item">
+                <strong>AI Layer</strong>
+                <p>OCR (document extraction) + Whisper (transcription) + OpenAI (summarization)</p>
+              </div>
+              <div class="arch-item">
+                <strong>Storage</strong>
+                <p>AWS S3 for secure DICOM and document storage</p>
+              </div>
+              <div class="arch-item">
+                <strong>Workflow</strong>
+                <p>Real-time dashboard with provider collaboration tools</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="case-study-section">
+            <h2>Results & Impact</h2>
+            <div class="metric-row">
+              <div class="metric-card highlight">
+                <strong>45%</strong>
+                <span>Reduction in referral handling time</span>
+              </div>
+              <div class="metric-card highlight">
+                <strong>92%</strong>
+                <span>OCR recognition accuracy in pilot</span>
+              </div>
+              <div class="metric-card highlight">
+                <strong>2x</strong>
+                <span>Faster imaging access for specialists</span>
+              </div>
+              <div class="metric-card highlight">
+                <strong>89%</strong>
+                <span>User satisfaction in usability testing</span>
+              </div>
+            </div>
+            <p style="margin-top: 1.5rem;">
+              <strong>Projected annual impact (500+ referrals/month):</strong> ~360 hours saved per clinic, reduced delays, improved patient outcomes through faster specialist coordination.
+            </p>
+          </section>
+
+          <section class="case-study-section">
+            <h2>Technologies Used</h2>
+            <div class="tech-stack">
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">AWS Compatible (S3, Lambda, EC2)</span>
+              <span class="tech-tag">OpenAI API</span>
+              <span class="tech-tag">Groq Llama 3.1</span>
+              <span class="tech-tag">Whisper (Speech-to-Text)</span>
+              <span class="tech-tag">DICOM Viewer</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">WebSockets</span>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
