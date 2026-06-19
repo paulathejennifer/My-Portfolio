@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MediFlow AI Case Study | Jennifer Olisakwe</title>
+  <title>MediFlow AI Case Study | Jennifer Chinyere</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -16,7 +16,7 @@
   <div class="page-shell">
     <header class="topbar">
       <a href="index.html" class="back-link"><i class="bx bx-arrow-back"></i></a>
-      <div class="brand">JENNIFER OLISAKWE.</div>
+      <div class="brand">JENNIFER CHINYERE.</div>
       <nav class="topnav">
         <a href="index.html">Portfolio</a>
       </nav>
@@ -93,28 +93,32 @@
         </section>
 
         <section class="case-study-section">
-          <h2>Solution Architecture</h2>
-          <p>
-            MediFlow AI unified intake, processing, and workflows on a single platform:
-          </p>
-          <div class="architecture-box">
-            <div class="arch-item">
-              <strong>Intake Layer</strong>
-              <p>Fax, email, portal ingestion with unified queuing</p>
-            </div>
-            <div class="arch-item">
-              <strong>AI Layer</strong>
-              <p>OCR (document extraction) + Whisper (transcription) + OpenAI (summarization)</p>
-            </div>
-            <div class="arch-item">
-              <strong>Storage</strong>
-              <p>AWS S3 for secure DICOM and document storage</p>
-            </div>
-            <div class="arch-item">
-              <strong>Workflow</strong>
-              <p>Real-time dashboard with provider collaboration tools</p>
-            </div>
-          </div>
+<h2>Solution Architecture</h2>
+<p>
+MediFlow AI processes referrals through a structured pipeline that converts unstructured clinical inputs into structured, reviewable data.
+</p>
+
+<div class="architecture-box">
+  <div class="arch-item">
+    <strong>Input Layer</strong>
+    <p>Upload of referrals via web interface (documents, notes, and voice inputs)</p>
+  </div>
+
+  <div class="arch-item">
+    <strong>Processing Layer</strong>
+    <p>OCR (Tesseract), Speech-to-Text (Whisper), and LLM-based summarization (Groq/OpenAI)</p>
+  </div>
+
+  <div class="arch-item">
+    <strong>Backend Layer</strong>
+    <p>FastAPI service handling authentication, processing orchestration, and data validation</p>
+  </div>
+
+  <div class="arch-item">
+    <strong>Storage Layer</strong>
+    <p>PostgreSQL for structured clinical data and S3-compatible storage for documents</p>
+  </div>
+</div>
         </section>
 
         <section class="case-study-section">
@@ -148,13 +152,14 @@
           <div class="tech-stack">
             <span class="tech-tag">FastAPI</span>
             <span class="tech-tag">PostgreSQL</span>
-            <span class="tech-tag">AWS Compatible (S3, Lambda, EC2)</span>
+            <span class="tech-tag">AWS (S3, Lambda, EC2)</span>
             <span class="tech-tag">OpenAI API</span>
             <span class="tech-tag">Groq Llama 3.1</span>
             <span class="tech-tag">Whisper (Speech-to-Text)</span>
-            <span class="tech-tag">DICOM Viewer</span>
+            <span class="tech-tag">Medical Imaging (DICOM-ready storage)</span>
             <span class="tech-tag">React</span>
             <span class="tech-tag">WebSockets</span>
+            <span class="tech-tag">Scikit-learn</span>
           </div>
         </section>
       </div>
