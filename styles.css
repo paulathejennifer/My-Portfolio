@@ -84,11 +84,7 @@ a {
   font-size: 0.95rem;
   transition: color 0.25s ease;
 }
-.project-image-3 {
-    background-image: url('images/diafrika-preview.jpg');
-    background-size: cover;
-    background-position: center;
-}
+
 .nav-link.active,
 .nav-link:hover {
   color: var(--accent);
@@ -920,18 +916,30 @@ section {
 }
 
 .project-image {
-  min-height: 360px;
-  border-radius: 28px;
-  position: relative;
-  overflow: hidden;
-  background: linear-gradient(135deg, rgba(124, 58, 237, 0.4), rgba(15, 23, 42, 0.95));
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+    min-height: 360px;
+    border-radius: 28px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, rgba(124, 58, 237, 0.4), rgba(15, 23, 42, 0.95));
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
+/* Specific images */
+.project-image-1 {
+    background-image: url('images/mediflow-preview.jpg');
+}
+
+.project-image-2 {
+    background-image: url('images/osteo-preview.jpg');
+}
+
+.project-image-3 {
+    background-image: url('images/diafrika-preview.jpg');
+}
 /* .project-image:hover {
   transform: scale(1.12);
 } */
@@ -976,17 +984,6 @@ section {
   background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.25));
 }
 
-.project-image-1 {
-  background-image: url('images/mediflow-preview.jpg');
-  background-size: cover;
-  background-position: center;
-}
-
-.project-image-2 {
-  background-image: url('images/osteo-preview.jpg');
-  background-size: cover;
-  background-position: center;
-}
 
 .project-tag {
   position: absolute;
