@@ -85,7 +85,9 @@ a {
   transition: color 0.25s ease;
 }
 .project-image-3 {
-    background: url("images/diafrika-preview.jpg") center center/cover no-repeat;
+    background-image: url('images/diafrika-preview.jpg');
+    background-size: cover;
+    background-position: center;
 }
 .nav-link.active,
 .nav-link:hover {
