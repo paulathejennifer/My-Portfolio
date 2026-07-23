@@ -84,7 +84,9 @@ a {
   font-size: 0.95rem;
   transition: color 0.25s ease;
 }
-
+.project-image-3 {
+    background: url("images/diafrika-preview.jpg") center center/cover no-repeat;
+}
 .nav-link.active,
 .nav-link:hover {
   color: var(--accent);
