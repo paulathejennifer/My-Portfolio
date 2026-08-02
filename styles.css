@@ -938,7 +938,8 @@ section {
 }
 
 .project-image-3 {
-    background-image: url('images/diafrika-preview.jpg');
+  background-image: url('images/w-exclusive-preview.jpg');
+  /* keep any other properties that are already there (background-size, position, etc.) */
 }
 /* .project-image:hover {
   transform: scale(1.12);
